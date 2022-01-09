@@ -1,0 +1,45 @@
+service: jchampion-conf-2022 
+frameworkVersion: '2'
+
+custom:
+  awsId: 739822415272
+
+provider:
+  name: aws
+  region: us-east-1
+  runtime: java11
+  memorySize: 256
+  timeout: 15
+  logRetentionInDays: 3
+
+package:
+  artifact: "target/jchampion-conf-2022.jar"
+
+functions:
+  getTime:
+    handler: is.alan.jchampionconf2022.endpoint.GetTime
+    events:
+      - http:
+          path: /gettime
+          method: get
+
+  lifeCycle:
+    handler: is.alan.jchampionconf2022.endpoint.LifeCycle
+    events:
+      - http:
+          path: /lifecycle
+          method: get
+
+  echo:
+    handler: is.alan.jchampionconf2022.endpoint.Echo
+    events:
+      - http:
+          path: /echo/
+          method: ANY
+
+  sqs-example:
+    handler: is.alan.jchampionconf2022.sqs.QueueListener
+    events:
+      - sqs:
+          arn: arn:aws:sqs:us-east-1:739822415272:jchampion-conf-queue-1
+          batchSize: 10

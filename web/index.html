@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jChampion Conference 2022 - Serverless</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+<h1>jChampion Conference 2022 - Getting started with Serverless</h1>
+
+<button class="evt-gettime">/gettime</button>
+<button class="evt-lifecycle">/lifecycle</button>
+<button class="evt-echo">/echo</button>
+
+<div style="padding: 10px; margin-top: 10px;">
+    <a id="aws-link" href="" target="_blank"></a>
+</div>
+
+<div style="border-top: 1px solid silver; padding: 30px; margin-top: 30px;">
+    <textarea id="input" rows="40" cols="40" style="float; left"></textarea>
+    <textarea id="console" rows="40" cols="120"></textarea>
+</div>
+
+<script>
+    const awsUrl = 'https://oepip7jcq4.execute-api.us-east-1.amazonaws.com/dev/';
+
+    $( document ).ready(function() {
+        $('.evt-gettime').on('click', fnGetTime);
+        $('.evt-lifecycle').on('click', fnLifeCycle);
+        $('.evt-echo').on('click', fnEcho);
+    });
+
+    function fnGetTime() {
+        $('#console').val('');
+        $('#aws-link').attr('href', awsUrl + 'gettime').html(awsUrl + 'gettime');
+
+        $.getJSON( awsUrl + 'gettime', function( resp ) {
+            $('#console').val( JSON.stringify(resp, null, 2));
+        });
+    }
+
+    function fnLifeCycle() {
+        $('#console').val('');
+        $('#aws-link').attr('href', awsUrl + 'lifecycle').html(awsUrl + 'lifecycle');
+
+        $.getJSON( awsUrl + 'lifecycle', function( resp ) {
+            $('#console').val( JSON.stringify(resp, null, 2));
+        });
+    }
+
+    function fnEcho() {
+        $('#console').val('');
+        $('#aws-link').attr('href', awsUrl + 'lifecycle').html(awsUrl + 'echo');
+
+        $.post( awsUrl + 'echo',
+            JSON.parse($('#input').val()),
+            function( resp ) {
+                $('#console').val( JSON.stringify(resp, null, 2));
+            },
+            'json');
+    }
+</script>
+
+</body>
+</html>
