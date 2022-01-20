@@ -26,7 +26,8 @@ public class Echo extends EndPointHandler {
               "variables", apiGatewayProxyRequestEvent.getStageVariables() != null ? apiGatewayProxyRequestEvent.getStageVariables() : "-" ,
               "body", apiGatewayProxyRequestEvent.getBody() != null ? apiGatewayProxyRequestEvent.getBody() : "-" ,
               "method", apiGatewayProxyRequestEvent.getHttpMethod() != null ? apiGatewayProxyRequestEvent.getHttpMethod() : "-" ,
-              "path", apiGatewayProxyRequestEvent.getPath() != null ? apiGatewayProxyRequestEvent.getPath() : "-"
+              "path", apiGatewayProxyRequestEvent.getPath() != null ? apiGatewayProxyRequestEvent.getPath() : "-",
+              "remainingTime", context.getRemainingTimeInMillis()
       ));
     } catch (Exception e) {
       LOG.error("Echo.catch", e);

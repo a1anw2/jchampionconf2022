@@ -7,7 +7,6 @@
   <version>dev</version>
   <name>jchampion-conf-2022</name>
 
-
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
@@ -54,7 +53,6 @@
               <goal>shade</goal>
             </goals>
             <configuration>
-              <!-- remove version from package name -->
               <finalName>${project.artifactId}</finalName>
             </configuration>
           </execution>

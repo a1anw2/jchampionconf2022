@@ -11,6 +11,7 @@ provider:
   memorySize: 256
   timeout: 15
   logRetentionInDays: 3
+  lambdaHashingVersion: 20201221
 
 package:
   artifact: "target/jchampion-conf-2022.jar"

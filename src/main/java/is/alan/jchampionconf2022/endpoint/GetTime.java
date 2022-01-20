@@ -20,11 +20,10 @@ public class GetTime extends EndPointHandler {
     Response res = getResponse();
 
     try {
-
       res.body(Map.of(
               "now", new Date(),
+              "toString", new Date().toString(),
               "epoch", new Date().getTime()));
-
     } catch (Exception e) {
       LOG.error("GetTime.catch", e);
       res.body(e);

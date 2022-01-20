@@ -11,6 +11,7 @@
       "memorySize": 256,
       "timeout": 15,
       "logRetentionInDays": 3,
+      "lambdaHashingVersion": "20201221",
       "stage": "dev",
       "variableSyntax": "\\${([^{}:]+?(?:\\(|:)(?:[^:{}][^{}]*?)?)}",
       "versionFunctions": true,
@@ -210,7 +211,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/jchampion-conf-2022/dev/1641764417285-2022-01-09T21:40:17.285Z/jchampion-conf-2022.jar"
+                "S3Key": "serverless/jchampion-conf-2022/dev/1642706678225-2022-01-20T19:24:38.225Z/jchampion-conf-2022.jar"
               },
               "Handler": "is.alan.jchampionconf2022.endpoint.GetTime",
               "Runtime": "java11",
@@ -235,7 +236,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/jchampion-conf-2022/dev/1641764417285-2022-01-09T21:40:17.285Z/jchampion-conf-2022.jar"
+                "S3Key": "serverless/jchampion-conf-2022/dev/1642706678225-2022-01-20T19:24:38.225Z/jchampion-conf-2022.jar"
               },
               "Handler": "is.alan.jchampionconf2022.endpoint.LifeCycle",
               "Runtime": "java11",
@@ -260,7 +261,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/jchampion-conf-2022/dev/1641764417285-2022-01-09T21:40:17.285Z/jchampion-conf-2022.jar"
+                "S3Key": "serverless/jchampion-conf-2022/dev/1642706678225-2022-01-20T19:24:38.225Z/jchampion-conf-2022.jar"
               },
               "Handler": "is.alan.jchampionconf2022.endpoint.Echo",
               "Runtime": "java11",
@@ -285,7 +286,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/jchampion-conf-2022/dev/1641764417285-2022-01-09T21:40:17.285Z/jchampion-conf-2022.jar"
+                "S3Key": "serverless/jchampion-conf-2022/dev/1642706678225-2022-01-20T19:24:38.225Z/jchampion-conf-2022.jar"
               },
               "Handler": "is.alan.jchampionconf2022.sqs.QueueListener",
               "Runtime": "java11",
@@ -303,44 +304,44 @@
               "SqsDashexampleLogGroup"
             ]
           },
-          "GetTimeLambdaVersioneW6AT4X8noVcaFtpH48NJhigzczYtgHRFVtbfU1vGM": {
+          "GetTimeLambdaVersion1CG69KYMBh7esimLXdFmYlX3sLOb2X64Km9mdgfxVl0": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetTimeLambdaFunction"
               },
-              "CodeSha256": "8TRee3LrQrHUj7pRWSfu+eaeBQJsJ58Ntc1hhpXw7Fk="
+              "CodeSha256": "DfQay4i2GDqT3FcE5V6STyZm0TOBOVTBSRQ+JWgEgAw="
             }
           },
-          "LifeCycleLambdaVersionVgR17RXiddZMSOyLsUuJahFNjypyFWmOREGe6M1ZHHw": {
+          "LifeCycleLambdaVersionIuZ7lXdqgsJLD8BDOK2aWrNXq1T0tvPlRdsw9t9OY": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "LifeCycleLambdaFunction"
               },
-              "CodeSha256": "8TRee3LrQrHUj7pRWSfu+eaeBQJsJ58Ntc1hhpXw7Fk="
+              "CodeSha256": "DfQay4i2GDqT3FcE5V6STyZm0TOBOVTBSRQ+JWgEgAw="
             }
           },
-          "EchoLambdaVersionjOL3R0iiKCyAlAVZgYsrqe20XdcdV360K51H3DjiiQ": {
+          "EchoLambdaVersion3HEJX37pNKcGP0Y1nKgEqjgsXBLxWwQDgFmAVrBFJA": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "EchoLambdaFunction"
               },
-              "CodeSha256": "8TRee3LrQrHUj7pRWSfu+eaeBQJsJ58Ntc1hhpXw7Fk="
+              "CodeSha256": "DfQay4i2GDqT3FcE5V6STyZm0TOBOVTBSRQ+JWgEgAw="
             }
           },
-          "SqsDashexampleLambdaVersionuBPSlroXSEDddlsHMFue2x4Ls7xX6oBgtuujgO9aU": {
+          "SqsDashexampleLambdaVersion1hyIDFJxj3KvjrunDGNbjGnp8j9yl7nAqdxeNoloPo": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "SqsDashexampleLambdaFunction"
               },
-              "CodeSha256": "8TRee3LrQrHUj7pRWSfu+eaeBQJsJ58Ntc1hhpXw7Fk="
+              "CodeSha256": "DfQay4i2GDqT3FcE5V6STyZm0TOBOVTBSRQ+JWgEgAw="
             }
           },
           "ApiGatewayRestApi": {
@@ -529,7 +530,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1641764415232": {
+          "ApiGatewayDeployment1642706677617": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -684,7 +685,7 @@
           "GetTimeLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetTimeLambdaVersioneW6AT4X8noVcaFtpH48NJhigzczYtgHRFVtbfU1vGM"
+              "Ref": "GetTimeLambdaVersion1CG69KYMBh7esimLXdFmYlX3sLOb2X64Km9mdgfxVl0"
             },
             "Export": {
               "Name": "sls-jchampion-conf-2022-dev-GetTimeLambdaFunctionQualifiedArn"
@@ -693,7 +694,7 @@
           "LifeCycleLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "LifeCycleLambdaVersionVgR17RXiddZMSOyLsUuJahFNjypyFWmOREGe6M1ZHHw"
+              "Ref": "LifeCycleLambdaVersionIuZ7lXdqgsJLD8BDOK2aWrNXq1T0tvPlRdsw9t9OY"
             },
             "Export": {
               "Name": "sls-jchampion-conf-2022-dev-LifeCycleLambdaFunctionQualifiedArn"
@@ -702,7 +703,7 @@
           "EchoLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "EchoLambdaVersionjOL3R0iiKCyAlAVZgYsrqe20XdcdV360K51H3DjiiQ"
+              "Ref": "EchoLambdaVersion3HEJX37pNKcGP0Y1nKgEqjgsXBLxWwQDgFmAVrBFJA"
             },
             "Export": {
               "Name": "sls-jchampion-conf-2022-dev-EchoLambdaFunctionQualifiedArn"
@@ -711,7 +712,7 @@
           "SqsDashexampleLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "SqsDashexampleLambdaVersionuBPSlroXSEDddlsHMFue2x4Ls7xX6oBgtuujgO9aU"
+              "Ref": "SqsDashexampleLambdaVersion1hyIDFJxj3KvjrunDGNbjGnp8j9yl7nAqdxeNoloPo"
             },
             "Export": {
               "Name": "sls-jchampion-conf-2022-dev-SqsDashexampleLambdaFunctionQualifiedArn"
@@ -851,7 +852,7 @@
         "timeout": 15,
         "runtime": "java11",
         "vpc": {},
-        "versionLogicalId": "GetTimeLambdaVersioneW6AT4X8noVcaFtpH48NJhigzczYtgHRFVtbfU1vGM"
+        "versionLogicalId": "GetTimeLambdaVersion1CG69KYMBh7esimLXdFmYlX3sLOb2X64Km9mdgfxVl0"
       },
       "lifeCycle": {
         "handler": "is.alan.jchampionconf2022.endpoint.LifeCycle",
@@ -870,7 +871,7 @@
         "timeout": 15,
         "runtime": "java11",
         "vpc": {},
-        "versionLogicalId": "LifeCycleLambdaVersionVgR17RXiddZMSOyLsUuJahFNjypyFWmOREGe6M1ZHHw"
+        "versionLogicalId": "LifeCycleLambdaVersionIuZ7lXdqgsJLD8BDOK2aWrNXq1T0tvPlRdsw9t9OY"
       },
       "echo": {
         "handler": "is.alan.jchampionconf2022.endpoint.Echo",
@@ -889,7 +890,7 @@
         "timeout": 15,
         "runtime": "java11",
         "vpc": {},
-        "versionLogicalId": "EchoLambdaVersionjOL3R0iiKCyAlAVZgYsrqe20XdcdV360K51H3DjiiQ"
+        "versionLogicalId": "EchoLambdaVersion3HEJX37pNKcGP0Y1nKgEqjgsXBLxWwQDgFmAVrBFJA"
       },
       "sqs-example": {
         "handler": "is.alan.jchampionconf2022.sqs.QueueListener",
@@ -907,7 +908,7 @@
         "timeout": 15,
         "runtime": "java11",
         "vpc": {},
-        "versionLogicalId": "SqsDashexampleLambdaVersionuBPSlroXSEDddlsHMFue2x4Ls7xX6oBgtuujgO9aU"
+        "versionLogicalId": "SqsDashexampleLambdaVersion1hyIDFJxj3KvjrunDGNbjGnp8j9yl7nAqdxeNoloPo"
       }
     },
     "configValidationMode": "warn",
@@ -926,7 +927,7 @@
       },
       "package": {
         "artifact": "target/jchampion-conf-2022.jar",
-        "artifactDirectoryName": "serverless/jchampion-conf-2022/dev/1641764417285-2022-01-09T21:40:17.285Z"
+        "artifactDirectoryName": "serverless/jchampion-conf-2022/dev/1642706678225-2022-01-20T19:24:38.225Z"
       },
       "functions": {
         "$ref": "$[\"service\"][\"functions\"]"
@@ -935,7 +936,7 @@
     "isDashboardMonitoringPreconfigured": false
   },
   "package": {
-    "artifactDirectoryName": "serverless/jchampion-conf-2022/dev/1641764417285-2022-01-09T21:40:17.285Z",
+    "artifactDirectoryName": "serverless/jchampion-conf-2022/dev/1642706678225-2022-01-20T19:24:38.225Z",
     "artifact": "jchampion-conf-2022.jar"
   }
 }
