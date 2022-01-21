@@ -10,6 +10,8 @@ Session (1hr +30mins of questions)
 
 ### Links
 
+Technical:
+
 * https://aws.amazon.com/lambda/
 * https://aws.amazon.com/api-gateway/pricing/
 * https://docs.aws.amazon.com/lambda/latest/dg/lambda-java.html
@@ -18,3 +20,8 @@ Session (1hr +30mins of questions)
 * https://docs.aws.amazon.com/lambda/latest/dg/lambda-services.html
 * https://www.serverless.com/framework/docs/getting-started
 * https://www.bschaatsbergen.com/behind-the-scenes-lambda
+
+Speaker:
+
+* https://alan.is/
+* https://www.linkedin.com/in/a1anw2/
