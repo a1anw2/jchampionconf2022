@@ -17,7 +17,6 @@ public class QueueListener implements RequestHandler<SQSEvent, Void> {
   public Void handleRequest(SQSEvent sqsEvent, Context context) {
 
     for (SQSEvent.SQSMessage msg : sqsEvent.getRecords()) {
-      String body = msg.getBody();
       Map props = GSON.fromJson(msg.getBody(), Map.class);
       LOG.info(props);
     }

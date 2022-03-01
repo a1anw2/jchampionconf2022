@@ -10,7 +10,7 @@ import org.apache.log4j.Logger;
 import java.util.Map;
 
 public class Echo extends EndPointHandler {
-  private static final Logger LOG = Logger.getLogger(GetTime.class);
+  private static final Logger LOG = Logger.getLogger(Echo.class);
 
   @Override
   public APIGatewayProxyResponseEvent handleRequest(APIGatewayProxyRequestEvent apiGatewayProxyRequestEvent, Context context) {
