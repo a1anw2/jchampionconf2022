@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class LifeCycle extends EndPointHandler {
-  private static final Logger LOG = Logger.getLogger(GetTime.class);
+  private static final Logger LOG = Logger.getLogger(LifeCycle.class);
   private InnerCountThread innerCountThread;
 
   public LifeCycle () {
